@@ -8,9 +8,9 @@ import { store } from "../Redux/store";
 const Data= ()=>{
  
     const dispatch= useDispatch();
-    const [state, newState]= useState();
+    // const [dat, setDat]= useState([]);
     useEffect( ()=>{
-        fetch("http://localhost:3001/details")
+        fetch("https://jsonplaceholder.typicode.com/posts")
         .then((res)=> res.json())
         // .then((res)=> console.log(res))
         .then((res)=> dispatch(storeData(res)))
@@ -18,7 +18,7 @@ const Data= ()=>{
         .catch((err)=> console.log(err));
     }, [])
     
-    const data= useSelector((state)=> state.data );
+    const data= useSelector((state)=> state.data )
     console.log("data",data);
 
     return <div>
