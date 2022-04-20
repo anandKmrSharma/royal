@@ -10,7 +10,7 @@ const Data= ()=>{
     const dispatch= useDispatch();
     const [state, newState]= useState();
     useEffect( ()=>{
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("http://localhost:3001/details")
         .then((res)=> res.json())
         // .then((res)=> console.log(res))
         .then((res)=> dispatch(storeData(res)))
