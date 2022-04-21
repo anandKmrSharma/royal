@@ -10,7 +10,7 @@ const initState= {
 
 // reducer read the action and according to that will update the state;
 
-const reducer= (state=initState, action)=> {
+const commentReducer= (state=initState, action)=> {
    switch(action.type){
 
        case STORE_DATA:
@@ -22,4 +22,4 @@ const reducer= (state=initState, action)=> {
    }
 }
 
-export {reducer};
+export {commentReducer};
