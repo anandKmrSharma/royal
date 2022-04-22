@@ -1,25 +1,16 @@
 import {STORE_DATA, IS_LOADING, IS_ERROR} from './actionTypes.js'
-
 // action will always return object
-
 const storeData= (payload)=> ({
-
     type: STORE_DATA,
     payLoad: payload
-
 })
-
 const handleLoading= ()=> ({
     type: IS_LOADING
-
 })
 
 const handleError= ()=> ({
-
     type: IS_ERROR,
-
 })
-
 
 const getData= () => (dispatch) => {
     dispatch(handleLoading())

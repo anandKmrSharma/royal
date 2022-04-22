@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {useSelector, useDispatch } from "react-redux";
 import{ storeData, handleError, handleLoading, getData } from '../Redux/post/action';
-
-
 const Data= ()=>{
  
     const dispatch= useDispatch();
@@ -27,5 +25,4 @@ const Data= ()=>{
         <h1> details of the data</h1>
     </div>
 }
-
 export {Data};
