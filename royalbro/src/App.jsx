@@ -4,7 +4,7 @@ import { Data } from './Components/Data';
 import {Footer} from "./Components/Footer";
 import {Home} from "./Components/Home"
 
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Link} from 'react-router-dom';
 import { Products } from './Components/Product';
 
 function App() {
@@ -12,11 +12,13 @@ function App() {
     <>
     <Routes>
       <Route path={"/home"} element={<Home/>} />
-      <Route path={"/home"} element={<Products/>} />
+      <Route path={"/products/:id"} element={<Products/>} />
+      <Route path={"/data"} element={<Data/>} />
+
 
     </Routes>
-    <Data/>
-    {/* <Footer/> */}
+    
+    
 
 </> 
    
