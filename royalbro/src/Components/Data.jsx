@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import {useSelector, useDispatch } from "react-redux";
+import {useParams, useNavigate} from "react-router-dom"
 import{ storeData, handleError, handleLoading, getData } from '../Redux/post/action';
 const Data= ()=>{
+const navigate= useNavigate();
  
     const dispatch= useDispatch();
     useEffect( ()=>{
@@ -23,6 +25,9 @@ const Data= ()=>{
 
     return <div>
         <h1> details of the data</h1>
+        <button onClick={ ()=>
+     navigate("/products/:id")
+  }   >products  page</button>
     </div>
 }
 export {Data};
