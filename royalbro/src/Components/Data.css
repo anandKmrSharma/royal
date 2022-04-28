@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+	width:100%;
+	height:100%;
+	border: 1px solid black;
+	flex-wrap: wrap;
+	gap: 50px;
+	margin: 80px;padding:100px;
+    background-color: blueviolet;
+}
+.btn{
+    margin-bottom: 20px;
+}
