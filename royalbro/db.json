@@ -98,8 +98,29 @@
 		"kmlimit": "10",
 		"exkm": "6",
 		"price": "1000"
+	  },
+	 
+	  {
+		"id": 12,
+		"name": "Honda Activa 5G",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566",
+		"booktime": "49",
+		"kmlimit": "10",
+		"exkm": "6",
+		"price": "1000"
 	  }
 	],
+
+	
+
+
+
+
+
+
+
+
+
 	"user": [
 	  {
 		"name": "ashwini",
@@ -307,6 +328,12 @@
 		"text2": "",
 		"text3": "",
 		"img": ""
+	  }, {
+		"id": 15,
+		"text1": "Travel",
+		"text2": "Tips For Renting A Motorcycle In Bangalore",
+		"text3": "This article sheds light on the places around Bangalore that can be explored with a rented two-wheeler and the tips that would help one avail bike rental in Bangalore.",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/009/med/bangalore1-reuters-traffic-moves-along-a-road-in-the-southern-indian-city-of-bangalore-december-14-2005.jpg"
 	  }
 	]
   }
