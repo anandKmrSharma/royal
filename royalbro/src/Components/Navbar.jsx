@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import {BasicMenu} from './Menu';
 // "@material-ui/core": "^4.12.4",
 //     "@material-ui/icons": "^4.11.3",
 //     "@material-ui/pickers": "^3.3.10",
@@ -53,10 +54,11 @@ const Navbar= ()=> {
 
   return (
     <div className={classes.root}>
+      
       <AppBar position="fixed" className={classes.app}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="black" aria-label="menu">
-            <MenuIcon />
+            <BasicMenu/>
           </IconButton>
           <Typography className={classes.title}>
             <img src="https://www.kindpng.com/picc/m/600-6000026_royal-brothers-logo-hd-png-download.png" 

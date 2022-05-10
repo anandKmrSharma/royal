@@ -12,10 +12,10 @@ function App() {
   return (
     
 <>
-<h1>Anand kumar sharma</h1>
       <div style={{ width: "100%", position: "absolute", zIndex: "14" }}>
         <Navbar />
       </div>
+      <Home/>
       <Data />
       {/* {modal ? <Location state={setModal} /> : ""}
       <Routes>
