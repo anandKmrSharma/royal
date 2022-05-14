@@ -87,7 +87,9 @@ const Navbar= ()=> {
 
           <Button  
               onClick={() => {
-              navigate("/login");
+              // navigate("/login");
+              navigate("/");
+
             }} 
               className={classes.btn}>Login
           </Button>

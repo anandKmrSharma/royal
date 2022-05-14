@@ -1,4 +1,4 @@
-import {STORE_DATA, IS_LOADING, IS_ERROR} from './actionTypes.js'
+import {STORE_DATA, IS_LOADING, IS_ERROR,ADD_CART} from './actionTypes.js'
 // action will always return object
 const storeData= (payload)=> ({
     type: STORE_DATA,
@@ -12,6 +12,13 @@ const handleError= ()=> ({
     type: IS_ERROR,
 })
 
+
+const addCart = (payload) => ({
+    type: ADD_CART,
+    payload : payload
+})
+
+
 const getData= () => (dispatch) => {
     dispatch(handleLoading())
         fetch("http://localhost:8000/data")
@@ -21,4 +28,4 @@ const getData= () => (dispatch) => {
 
         .catch((err)=> dispatch(handleError()));
 }
-export {storeData, handleError, handleLoading, getData}
+export {storeData, handleError, handleLoading, getData,addCart}

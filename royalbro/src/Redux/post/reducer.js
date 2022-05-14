@@ -1,10 +1,11 @@
 
-import {STORE_DATA, IS_ERROR, IS_LOADING} from './actionTypes.js'
+import {STORE_DATA, IS_ERROR, IS_LOADING, ADD_CART} from './actionTypes.js'
 // initial state
 const initState= {
      isLoading: false,
      isError: false, 
-     data: []
+     data: [],
+     cart:[]
 }
 // reducer read the action and according to that will update the state;
 const postReducer= (state=initState, action)=> {
@@ -17,8 +18,10 @@ const postReducer= (state=initState, action)=> {
 
 
        case STORE_DATA:
-
        return {...state, isLoading:false, data: action.payload}
+        
+       case ADD_CART:
+         return {...state, cart : [action.payload]}
        default: 
        return state;
    }

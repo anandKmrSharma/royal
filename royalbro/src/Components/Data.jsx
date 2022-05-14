@@ -5,8 +5,6 @@ import styles from "./Data.module.css";
 
 import Button from "@material-ui/core/Button";
 // import { useNavigate } from "react-router";
-
-
 import {
   storeData,
   handleError,
@@ -14,23 +12,23 @@ import {
   getData,
 } from "../Redux/post/action";
 const Data = () => {
-
   const navigate = useNavigate();
-
+  const params= useParams();
+  // console.log("params", params);
+  const[category,setCategory]= useState("");
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getData());
   }, []);
-
+  
   const data = useSelector((state) => state.post.data);
   const Loading = useSelector((state) => state.post.isLoading);
   const Error = useSelector((state) => state.post.isError);
 
-  const bookHandling= ()=>{
-    navigate("/book")
-  }
-
-  console.log("data", data);
+  // const dataHandling= ()=>{
+  //   console.log("annad", params);
+  //   navigate("/product")
+  // }
 
   if (Loading) {
     return <h1>loading...</h1>;
@@ -40,6 +38,8 @@ const Data = () => {
   }
   return (
     <div  >
+
+    <h1>Params id is : {params.id}</h1>
 
       <h1 className={styles.head} > Book your ride </h1>
 
@@ -52,7 +52,7 @@ const Data = () => {
                   <img src={el.img} alt="" />
                 </p>
                 <h1>{el.name} </h1> 
-                <Button onClick={bookHandling} className={styles.book}>Book</Button>  
+                <Button onClick={ ()=>{navigate(`/product/${el.id}`)}  } className={styles.book}>Book</Button>  
                 {/* <button cname="boo">Book</button>   */}  
               </div>
             </>

@@ -1,17 +1,20 @@
-// import "./Home.css";
-// import DateTimePicker from "./DateTimePicker";
+import "./Home.css";
+// import DateTime from "./DateTime";
 import React from 'react';
+import {Data} from './Data';
 const Home = () => {
 
   return (
     <>
-      {/* <DateTimePicker/> */}
-      {/* <img 
+      {/* <DateTime/> */}
+
+      <img 
         className="home-img"
         src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page_web-986bff386c60dfaf5106b17c40f7c04228518a95dff9b04ccd88c81465cec0be.jpg"
         alt="home"
-      ></img> */}
+      ></img>
       <div className="home-sani">
+        
         <div className="home-sani-ch">Sanitized Vehicles</div>
         <div className="home-sani-ch">Vehicle Insurance</div>
         <div className="home-sani-ch">24/7 Roadside Assistance</div>
@@ -27,6 +30,9 @@ const Home = () => {
         <h1 className="home-sani-h">WE BELIEVE IN QUALITY</h1>
         <div className="home-sani-line"></div>
       </div>
+      
+      <Data />
+
     </>
   );
 };
