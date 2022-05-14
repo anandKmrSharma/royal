@@ -25,10 +25,10 @@ const Data = () => {
   const Loading = useSelector((state) => state.post.isLoading);
   const Error = useSelector((state) => state.post.isError);
 
-  // const dataHandling= ()=>{
-  //   console.log("annad", params);
-  //   navigate("/product")
-  // }
+  const dataHandling= ()=>{
+    console.log("annad", params);
+    navigate(`/product/${data.el.id}`)
+  }
 
   if (Loading) {
     return <h1>loading...</h1>;
@@ -48,12 +48,18 @@ const Data = () => {
           return (
             <>
               <div className={styles.single}>
-                <p>
+
+              <p className={styles.name}>{el.name} </p>
+                
                   <img src={el.img} alt="" />
+                
+                 <p className={styles.contain}> bookTime: {el.booktime}</p>
+                <p className={styles.contain}> Kmlimit: {el.kmlimit}</p>
+                <p className={styles.contain}> km: {el.exkm}</p>
+                <p className={styles.contain}>price: {el.price}</p>
+                <p className={styles.button}>
+                <Button  onClick={ ()=>{navigate(`/product/${el.id}`)}  } className={styles.book}>Book</Button>
                 </p>
-                <h1>{el.name} </h1> 
-                <Button onClick={ ()=>{navigate(`/product/${el.id}`)}  } className={styles.book}>Book</Button>  
-                {/* <button cname="boo">Book</button>   */}  
               </div>
             </>
           );
@@ -65,7 +71,13 @@ const Data = () => {
 export { Data };
 
 
-
+// "id": 2,
+// 		"name": "Honda Dio",
+// 		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819",
+// 		"booktime": "19",
+// 		"kmlimit": "5",
+// 		"exkm": "4",
+// 		"price": "9000"
 
 
 //navigation part

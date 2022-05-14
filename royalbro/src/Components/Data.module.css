@@ -18,7 +18,12 @@
 
 .single{
 	width: 25%;
+	background-color: whitesmoke;
+	
 }
+.single:hover {
+	background-color:  aquamarine;
+  }
 .head{
 	margin-left: 45%;
 	margin-top: 10px;
@@ -26,4 +31,31 @@
 	text-decoration: underline;
 	font-style: inherit;
 	color: blueviolet;
+}
+.name{
+	font-size: 25px;
+	text-align: center;
+}
+img{
+	align-items: center;
+	margin-left: 50px;
+}
+.button{
+	background-color: blue;
+     text-align: center;
+}
+.contain{
+	text-align: center;
+	font-size: 20px;
+	color: green;
+}
+
+.singleProduct{
+	display: flex;
+	gap: 40px;
+}
+.paymentbox{
+	width: 25%;
+	margin-top: 25px;
+	
 }
