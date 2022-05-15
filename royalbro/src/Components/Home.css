@@ -15,11 +15,12 @@
 }
 .home-sani-h{
 	margin: 0px;
-
+    text-align: center;
+    font-size: 30px;
 }
 .home-sani-line{
-	width:60px;
-	height:5px;
+	width:65px;
+	height:3px;
 	background-color:rgb(253, 253, 5);
 	margin:auto;
 }

@@ -23,8 +23,10 @@ const Home = () => {
       </div>
       
       <div className="home-sani-div">
-        <h1 className="home-sani-h">OUR FLEET</h1>
+        {/* <h1 className="home-sani-h">OUR FLEET</h1> */}
+        <h1 className="home-sani-h">Our fleet</h1>
         <div className="home-sani-line"></div>
+        <Data />
       </div>
 
       <div className="home-sani-div">
@@ -34,7 +36,7 @@ const Home = () => {
       
          <CarouseleSlide/>
 
-      <Data />
+      
 
     </>
   );

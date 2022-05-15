@@ -39,9 +39,7 @@ const Data = () => {
   return (
     <div  >
 
-    <h1>Params id is : {params.id}</h1>
-
-      <h1 className={styles.head} > Book your ride </h1>
+      {/* <h1 className={styles.head} > Our fleet </h1> */}
 
       <div className={styles.container}>
         {data.map((el) => {
