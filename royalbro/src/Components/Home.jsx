@@ -3,6 +3,7 @@ import "./Home.css";
 import React from 'react';
 import {Data} from './Data';
 import {CarouseleSlide} from "./Carsoule"
+import { CarouseleS } from "./CarsouleS";
 const Home = () => {
 
   return (
@@ -32,9 +33,16 @@ const Home = () => {
       <div className="home-sani-div">
         <h1 className="home-sani-h">WE BELIEVE IN QUALITY</h1>
         <div className="home-sani-line"></div>
+        <CarouseleSlide/>
+
+      </div>
+      <div className="home-sani-div">
+        <h1 className="home-sani-h" >FEATURED IN</h1>
+        <div className="home-sani-line"></div>
+        <CarouseleS/>
+
       </div>
       
-         <CarouseleSlide/>
 
       
 

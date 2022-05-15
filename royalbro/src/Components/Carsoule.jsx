@@ -5,7 +5,9 @@ import styles from "./Carsoule.module.css";
 const CarouseleSlide= ()=> {
   return (
     <Carousel autoplay className="App" >
+      
       <CarouselItem className={styles.Carousel__solo}>
+      
         <img
           alt="sliderOne"
           src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/slide-one-8c7f76cbbc58a89e95e8fcc1ab03d3d4cf12ef680989755fcf01f3a725d5d775.jpg"

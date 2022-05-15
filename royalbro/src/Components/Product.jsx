@@ -36,25 +36,25 @@ const Products = () => {
   }, []);
 
   return (
-    <>
-      <h1>products page</h1>
-      <p>products is : {id} </p>
-      <button>add</button>
-      <button>data page</button>
 
       <>
         <div className={styles.singleProduct}>
           <div className={styles.single}>
-            <p className={styles.name}>{prod.name} </p>
+            <p className={styles.name}>SUMMARY </p>
 
             <img src={prod.img} alt="" />
+            <p className={styles.name}>{prod.name} </p>
+          </div>
 
-            <p className={styles.contain}> bookTime: {prod.booktime}</p>
-            <p className={styles.contain}> Kmlimit: {prod.kmlimit}</p>
+          <div className={styles.single}>
+            <p className={styles.name}>{prod.name} </p>
+            <p className={styles.contain}> booking Time: {prod.booktime}</p>
+            <p className={styles.contain}> Km limit: {prod.kmlimit}</p>
             <p className={styles.contain}> km: {prod.exkm}</p>
           </div>
+
           <div className={styles.paymentbox}>
-            <p className={styles.contain}>price: {prod.price}</p>
+            <p className={styles.contain}>booking price: {prod.price}</p>
             <p className={styles.button}>
               <Button
                 onClick={() => {
@@ -68,8 +68,15 @@ const Products = () => {
           </div>
         </div>
       </>
+  );
+};
 
-      {/* {data
+export { Products };
+
+
+
+
+ {/* {data
 
         .filter((el) => {
           if (el.id === params.id) setProd(el.id);
@@ -89,8 +96,4 @@ const Products = () => {
             </>
           );
         })} */}
-    </>
-  );
-};
-
-export { Products };
+    

@@ -51,10 +51,10 @@ const Data = () => {
                 
                   <img src={el.img} alt="" />
                 
-                 <p className={styles.contain}> bookTime: {el.booktime}</p>
-                <p className={styles.contain}> Kmlimit: {el.kmlimit}</p>
+                 <p className={styles.contain}> booking Time: {el.booktime}</p>
+                <p className={styles.contain}> Kml imit: {el.kmlimit}</p>
                 <p className={styles.contain}> km: {el.exkm}</p>
-                <p className={styles.contain}>price: {el.price}</p>
+                <p className={styles.contain}>booking price: {el.price}</p>
                 <p className={styles.button}>
                 <Button  onClick={ ()=>{navigate(`/product/${el.id}`)}  } className={styles.book}>Book</Button>
                 </p>
@@ -69,18 +69,3 @@ const Data = () => {
 export { Data };
 
 
-// "id": 2,
-// 		"name": "Honda Dio",
-// 		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819",
-// 		"booktime": "19",
-// 		"kmlimit": "5",
-// 		"exkm": "4",
-// 		"price": "9000"
-
-
-//navigation part
-  // const handleNavigate= (proId)=>{
-  //          navigate(`product/${proId}`)
-  // }
-{/* <h1 onClick={handleNavigate(1)}>product 1</h1> */}
-      {/* <h1 onClick={handleNavigate(2)}>product 2</h1> */}
