@@ -21,7 +21,7 @@ const addCart = (payload) => ({
 
 const getData= () => (dispatch) => {
     dispatch(handleLoading())
-        fetch("http://localhost:8000/data")
+        fetch("https://royaldatabase.herokuapp.com/data")
         .then((res)=> res.json())
         // .then((res)=> console.log(res))
         .then((res)=> dispatch(storeData(res)))

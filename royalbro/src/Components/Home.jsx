@@ -2,6 +2,7 @@ import "./Home.css";
 // import DateTime from "./DateTime";
 import React from 'react';
 import {Data} from './Data';
+import {CarouseleSlide} from "./Carsoule"
 const Home = () => {
 
   return (
@@ -31,6 +32,8 @@ const Home = () => {
         <div className="home-sani-line"></div>
       </div>
       
+         <CarouseleSlide/>
+
       <Data />
 
     </>

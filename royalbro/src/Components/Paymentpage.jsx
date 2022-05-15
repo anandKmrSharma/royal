@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 
 const Paymentpage= ()=>{
 
+
     return(
 
         <>
@@ -28,7 +29,7 @@ const Paymentpage= ()=>{
         <FormControlLabel value="upi" control={<Radio />} label="upi" />
         <FormControlLabel value="card" control={<Radio />} label="card " />
       </RadioGroup>
-      <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined">
+      <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined" onClick  >
           submit
         </Button>
     </FormControl>

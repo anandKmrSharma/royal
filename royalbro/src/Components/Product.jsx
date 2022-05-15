@@ -29,7 +29,7 @@ const Products = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:8000/data/${id}`);
+      const res = await fetch(`https://royaldatabase.herokuapp.com/data/${id}`);
       setProd(await res.json());
     };
     fetchData();
