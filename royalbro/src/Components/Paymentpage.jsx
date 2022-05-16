@@ -22,7 +22,7 @@ return <>
 </> 
 return(
          <>
-         <div style={{marginTop: "150px",marginLeft: "30%", backgroundColor:"whitesmoke", width:"500px",height:"500px"}}>
+         <div style={{marginTop: "150px",marginLeft: "30%", backgroundColor:"whitesmoke", width:"500px",height:"300px"}}>
 
 
          <h1>Enter your payment details</h1>
