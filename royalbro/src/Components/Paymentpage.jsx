@@ -22,10 +22,10 @@ return <>
 </> 
 return(
          <>
-         <div style={{marginTop: "150px",marginLeft: "30%", backgroundColor:"whitesmoke", width:"300px",height:"300px"}}>
+         <div style={{marginTop: "150px",marginLeft: "30%", backgroundColor:"whitesmoke", width:"500px",height:"500px"}}>
 
 
-         <h1>Payment page</h1>
+         <h1>Enter your payment details</h1>
 
 <FormControl>
 <FormLabel id="demo-radio-buttons-group-label">Choose payment method</FormLabel>
