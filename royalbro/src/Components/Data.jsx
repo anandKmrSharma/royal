@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import styles from "./Data.module.css";
-
 import Button from "@material-ui/core/Button";
 // import { useNavigate } from "react-router";
 import {
@@ -30,17 +29,26 @@ const Data = () => {
     navigate(`/product/${data.el.id}`)
   }
 
+  const [filt, setFilt]= useState("")
+  const lowToHigh= ()=>{
+  }
+
   if (Loading) {
     return <h1>loading...</h1>;
   }
   if (Error) {
     return <h1>something went wrong...</h1>;
   }
+
   return (
-    <div  >
+    
+    <div>
+      
+            <h1 style={{marginLeft:"300px", color:"yellowgreen"}}>Filter</h1>
+             <Button className="filter">low to high</Button>
+             <Button onClick={ lowToHigh} className="filter">high to low</Button>
 
-      {/* <h1 className={styles.head} > Our fleet </h1> */}
-
+      {/* <h1 className={styles.head} > Our fleet </h1> */}   
       <div className={styles.container}>
         {data.map((el) => {
           return (

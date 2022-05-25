@@ -17,7 +17,7 @@
 }
 
 .single{
-	width: 25%;
+	width: 20%;
 	/* height: 300px; */
 	background-color: whitesmoke;
 	
@@ -64,4 +64,9 @@ img{
 
 .flexBox{
 	display: flex;
+}
+
+.filter{
+	margin-Left:"300px";
+	color: blue;
 }

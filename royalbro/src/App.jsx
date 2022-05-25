@@ -21,23 +21,9 @@ function App() {
       </div>
 
       <Routes>
-
         <Route path="/" element={ <Home /> }> </Route>
-        {/* <Route path="/product" element={ < Products/> }> </Route> */}
         <Route path="/product/:id" element={ < Products/> }> </Route>
-         
-        {/* <Route path= "/login" element = {SigninMain}></Route> */}
-        
-
-
-        <Route path="/paymentpage" element={<Paymentpage/>}></Route>
-
-        {/* <Route path="/signin" element={<Signup />}></Route> */}
-        {/* <Route path="/login" element={<Login />}></Route> */}
-        {/* <Route path="/bookingPage" element={<Booking />}></Route> */}
-        {/* <Route path="/checkout/:id" element={<Checkout />}></Route> */}
-        {/* <Route path="/checkout/paymentpage/:total" element={<Paymentpage />}></Route> */}
-
+        <Route path="/paymentpage" element={<Paymentpage/>}></Route>   
       </Routes>
     
       <Footer />
